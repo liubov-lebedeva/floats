@@ -165,11 +165,6 @@ a {
     padding: 40px 0;
     background: lemonchiffon;
 }
-.float-container::after {
-    content: '';
-    clear: both;
-    display: block;
-}
 
 .float-child {
     outline: 2px solid black;

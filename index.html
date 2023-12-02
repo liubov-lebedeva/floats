@@ -32,7 +32,7 @@
 <main class="container">
     <section>
         <h2 class="titleHidden">Float Layout</h2>
-        <div class="float-container">
+        <div class="float-container clearfix">
             <div class="float-child">1 The specificity of A is 1 (one element selector). A: h1</div>
             <div class="float-child">2 The specificity of B is 101 (one ID reference + one element selector). B:
                 h1#content
@@ -56,11 +56,10 @@
 
         </div>
     </section>
-    <section class="float-image container">
+    <section class="float-image container clearfix">
         <img src="imgs/CatProgrammer.png" alt="CatProgrammer" width="200" height="200">
         <p>4 Since the third rule (C) has the highest specificity value (1000), this style
             declaration will be applied.</p>
-        <div class="clr"></div>
     </section>
 </main>
 <footer class="footer">
