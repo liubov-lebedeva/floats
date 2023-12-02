@@ -1,0 +1,227 @@
+@import url(reset.css);
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container-in, .tabContainer {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    background: #fdf7f7;
+    text-align: center;
+    font-size: 0;
+}
+
+.tabContainer {
+    font-size: 20px;
+    background: #d79ed1;
+}
+
+.tabContainer > div {
+    display: table-cell;
+    outline: 2px solid red;
+}
+
+.header {
+    font-size: 28px;
+    border: 3px solid black;
+    margin: 0 0 20px;
+    padding: 10px 0;
+}
+
+.container-in > div {
+    background: turquoise;
+    outline: 2px solid darkred;
+    width: 300px;
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.heading {
+    background: cadetblue;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.heading .container {
+    font-size: 0;
+    text-align: center;
+}
+
+a {
+    /*color: inherit;*/
+    text-decoration: none;
+}
+
+.logo, .menu, .login {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.logo {
+    width: 100px;
+    text-transform: uppercase;
+}
+
+.menu {
+    width: 1000px;
+    font-size: 0;
+}
+
+.menu > li {
+    display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    padding-bottom: 3px;
+}
+
+.menu > li:hover {
+    border-top: 2px solid red;
+}
+
+.menu > li:first-child {
+    margin-left: 0;
+}
+
+.menu > li a {
+    color: #fff;
+}
+
+
+.menu > li a:hover {
+    color: orange;
+}
+
+.menu > li a:active {
+    color: blueviolet;
+}
+
+.menu > li a.active {
+    color: chartreuse;
+}
+
+
+.menu > li:last-child a {
+    color: red;
+}
+
+.login {
+    width: 100px;
+    padding: 10px;
+    background: #0d77d7;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.login:hover {
+    background: #fff;
+    color: #0d77d7;
+}
+
+.footer {
+    padding: 20px 0;
+    background: #000;
+    color: #ffffff;
+    text-align: center;
+}
+
+/*FLOAT*/
+
+.float-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+    background: lemonchiffon;
+}
+
+.float-child {
+    outline: 2px solid black;
+    width: 300px;
+    float: left;
+}
+
+/*.float-child:nth-child(3) {
+    background: yellow;
+}
+
+.float-child:nth-child(7) {
+    background: white;
+}*/
+.float-child:nth-child(odd) {
+    background: red;
+}
+
+.float-image {
+    font-size: 26px;
+    background: orange;
+}
+
+.float-image img {
+    float: left;
+    margin-right: 10px;
+}
+
+.clr {
+    clear: both;
+}
+
+.cards {
+    background: lightblue;
+    padding: 80px 0;
+}
+
+.cards h2 {
+    font-weight: 900;
+    font-size: 34px;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.cards-container {
+    font-size: 0;
+}
+
+.card {
+    width: 200px;
+    padding: 10px;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.cardImg {
+    height: 100px;
+    display: block;
+    background: red;
+    margin: 0 0 10px;
+}
+
+.cardImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardTitle {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.cardDesc {
+    margin: 0 0 10px;
+    height: 80px;
+    overflow: hidden;
+
+}
+
+.cardLink {
+    text-decoration: underline;
+}
