@@ -6,7 +6,12 @@ first-child {}
 :Last-child {}
 :nth-child(X) {}
 :active {}
-:hover{｝*/
+:hover{｝ */
+
+/* !ПСУВДОЕЛЕМЕНТИ
+    ::before {}
+    ::after {}
+*/
 
 .container {
     width: 1200px;
@@ -85,10 +90,11 @@ a {
     text-transform: uppercase;
     margin-left: 20px;
     padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
 }
 
 .menu > li:hover {
-    border-bottom: 2px solid red;
+    border-color: red;
 }
 
 .menu > li:first-child {
@@ -125,6 +131,20 @@ a {
     border-radius: 6px;
 }
 
+.titleHidden {
+    font-size: 40px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.titleHidden::before {
+    content: 'text ';
+}
+
+.titleHidden::after {
+    content: ' 😘';
+}
+
 .login:hover {
     background: #fff;
     color: #0d77d7;
@@ -144,6 +164,11 @@ a {
     margin: 0 auto;
     padding: 40px 0;
     background: lemonchiffon;
+}
+.float-container::after {
+    content: '';
+    clear: both;
+    display: block;
 }
 
 .float-child {
